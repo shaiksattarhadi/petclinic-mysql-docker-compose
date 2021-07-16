@@ -11,8 +11,8 @@ services:
     ports:
       - 3306:3306
 
-  springboot-docker-container: 
-   image: springboot-docker-container
+  petclinic-docker-container: 
+   image: petclinic-docker-container
    build:
      context: ./
      dockerfile: Dockerfile
