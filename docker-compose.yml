@@ -1,13 +1,13 @@
 version: '3'
 services:
-  kumar-mysql:
+  hadi-mysql:
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
     environment:
-      - MYSQL_ROOT_PASSWORD=kumar_password 
-      - MYSQL_DATABASE=kumar_db
-      - MYSQL_USER=kumar_user
-      - MYSQL_PASSWORD=kumar_password
+      - MYSQL_ROOT_PASSWORD=hadi_password 
+      - MYSQL_DATABASE=hadi_db
+      - MYSQL_USER=hadi_user
+      - MYSQL_PASSWORD=hadi_password
     ports:
       - 3306:3306
 
@@ -19,4 +19,4 @@ services:
    ports:
      - 8080:8080
    depends_on:
-     - kumar-mysql 
+     - hadi-mysql 
